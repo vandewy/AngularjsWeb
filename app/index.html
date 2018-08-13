@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="en" data-ng-app="myApp" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" data-ng-app="myApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" data-ng-app="myApp" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" data-ng-app="myApp" class="no-js"> <!--<![endif]-->
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>About</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/normalize.css">
+  <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/main.css">
+  <link rel="stylesheet" href="app.css">
+  <link rel="stylesheet" href="../public/css/bootstrap.min.css" type = "text/css"/>
+  <link rel="stylesheet" href="../public/css/vandycreated.css" type = "text/css" />
+  <script src="../public/js/bootstrap.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
+
+  <style type="text/css">
+    html,
+    body {
+      height:100%
+    }
+  </style>
+
+  <!-- ADD ICON LATER -->
+  <link rel="icon" type="image/x-icon" href="">
+
+</head>
+<body class="body" style="background-color:#f6f6f6">
+
+
+  <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+  <![endif]-->
+
+  <div class="container-fluid" style="min-height:95%; ">
+    <div class="banner_row" >
+      <div id="banner">
+        <!--<img src="{% static 'home/img/radar_background.png' %}" class="responsive-img" style='max-height:100px;' alt="radar">
+        -->
+        <br>
+
+        <h2 class="d-block text-truncate" id="top_description">Software Development  |  Air Traffic Control  |  Boxer Doggo</h2>
+
+      </div>
+    </div><hr>
+
+    <div class="row">
+      <div class="col-sm-2">
+
+        <!-- Great, til you resize. -->
+        <!--<div class="well bs-sidebar affix" id="sidebar" style="background-color:#fff">-->
+        <div class="well bs-sidebar" id="sidebar" style="background-color:#fff">
+          <!--<ul class="nav nav-pills nav-stacked nav-fill">-->
+          <!--<li>-->
+
+          <div class="tableofcontents"><a href="#!about" class="list-group-item">About</a></div>
+          <div class="tableofcontents"><a href="#!projects" class="list-group-item">Projects</a></div>
+          <div class="tableofcontents"><a href='#!contact' class="list-group-item">Contact</a></div>
+          <!--</li>-->
+          <!--</ul>-->
+        </div> <!--well bs-sidebar affix-->
+        <img src="../public/img/personal_photo.jpg" class="img-fluid img-thumbnail" id="personal_photo"/>
+      </div> <!--col-sm-2-->
+      <div class="col-sm-10">
+
+        <div class='container-fluid'>
+          <br><br>
+          <div ng-view></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <footer>
+    <div class="container-fluid" style='margin-left:15px'>
+      <a href="">Contact</a> | <a href="https://www.github.com/vandewy" target="blank">Github</a>
+    </div>
+  </footer>
+
+
+  <!-- In production use:
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
+  -->
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-route/angular-route.js"></script>
+  <script src="app.js"></script>
+  <script src="about/about.js"></script>
+  <script src="projects/projects.js"></script>
+  <script src="contact/contact.js"></script>
+  <script src="components/version/version.js"></script>
+  <script src="components/version/version-directive.js"></script>
+  <script src="components/version/interpolate-filter.js"></script>
+</body>
+</html>
