@@ -1,0 +1,35 @@
+#f181{
+    position: absolute;
+
+    /*margin-bottom: 2px;*/
+    -webkit-animation-name: f181_move; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 20s; /* Safari 4.0 - 8.0 */
+    -webkit-animation-delay: 0s; /* Safari 4.0 - 8.0 */
+
+    animation-name: f181_move;
+    animation-duration: 10s;
+    animation-delay: 0s;
+
+    /*needed for smooth transitions*/
+    animation-timing-function: ease-out;
+
+    transition: .2s;
+    animation-iteration-count: infinite;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes f181_move {
+    0%   {background-color: transparent; left:0%; top:5%;}
+
+    100% {background-color: transparent; left:100%; top:5%;}
+
+}
+
+/* Standard syntax */
+@keyframes f181_move {
+    0%   {background-color: transparent; left:0%; top:7%;}
+
+    100% {background-color: transparent; left:95%; top: 12%;}
+
+
+}

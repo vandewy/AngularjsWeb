@@ -6,9 +6,11 @@ angular.module('myApp', [
   'about',
   'projects',
   'contact',
+  'process',
+  'towersim',
   'myApp.version'
-]).
-config(['$locationProvider', '$routeProvider', function($locationProvider, $routeProvider) {
+])
+    .config(['$locationProvider', '$routeProvider', function($locationProvider, $routeProvider) {
   $locationProvider.hashPrefix('!');
 
   $routeProvider.otherwise({redirectTo: '/about'});

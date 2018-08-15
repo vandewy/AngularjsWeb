@@ -36,6 +36,13 @@
     "express": "^4.16.3",
     "nodemailer": "^4.6.7",
     "requests": "^0.2.2",
-    "sqlite3": "^4.0.2"
+    "require": "^2.4.20",
+    "requirejs": "^2.3.5",
+    "requires": "^1.0.2",
+    "sqlite3": "^4.0.2",
+    "videogular": "^2.2.1",
+    "videogular-buffering": "^1.4.4",
+    "videogular-controls": "^1.4.4",
+    "videogular-themes-default": "^1.4.4"
   }
 }

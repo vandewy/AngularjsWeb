@@ -1,6 +1,6 @@
 <html data-ng-app="contact">
 <head>
-    <link rel="stylesheet" href="../../public/css/vandycreated.css" type = "text/css" />
+    <link rel="stylesheet" href="../../public/css/vandycreated.css" type ="text/css" />
 </head>
 <h2>Send e-mail to ryan@vandycraft.com</h2>
 
@@ -8,7 +8,7 @@
 <body>
     <div data-ng-controller="ContactCtrl">
         <div id="messages" class="alert alert-success" data-ng-show="messages" data-ng-bind="messages"></div>
-        <form name="mail" novalidate role="form">
+        <form name="mail" novalidate role="form" method="post" action="#!process">
             <div class="form-group">
                 <label>Name:</label><br>
                 <input id="user_name" type="text" name="name" data-ng-model="name" class="form-control" required /><br>
@@ -24,7 +24,8 @@
             </div>
             <br><br>
 
-            <button data-ng-click="submit(mail)" class="btn btn-default">Submit</button>
+            <!--<button submit(mail)" class="btn btn-default">Submit</button>-->
+            <input name="submit" value="Submit" type="submit">
             <input type="reset" value="Reset">
 
         </form>

@@ -1,10 +1,12 @@
 'use strict';
 
+
 angular.module('contact', ['ngRoute'])
 
 .config(['$routeProvider', function($routeProvider) {
   $routeProvider.when('/contact', {
     templateUrl: 'contact/contact.html',
+    Url: 'contact/process.php',
     controller: 'ContactCtrl'
   });
 }])
@@ -25,14 +27,19 @@ angular.module('contact', ['ngRoute'])
         console.log(email);
         console.log(message);
 
-        var sql = require('sqlite3');
-        var mailer = require('nodemailer');
+        //var sql = require('sqlite3');
+        //var mailer = require('nodemailer');
+
+        //var db = new sql.Database('./messages.db');
+        //var date = Date();
+
+        //db.run('INSERT INTO messages(user_name, user_email, message, date) VALUES(?,?,?,?)', [name, email, message, date]);
 
 
-
-        if(String(email) == "undefined"){
-            console.log("invalid email");
-        }
+        //db.close();
+        //if(String(email) == "undefined"){
+            //console.log("invalid email");
+        //}
 
 
 
